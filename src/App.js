@@ -1,27 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
+import axios from 'axios';
+import DataApi from './DataApi';
 import logo from './logo.svg';
 import './App.css';
+import PitStopList from "./PitStopList";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+class App extends React.Component {
+    async componentDidMount(){
+        const resp = await axios.get('/api/pitstops');
+        const api = new DataApi(resp.data);
+
+        this.setState(() => {
+            return {
+                pitStops : api.getPitStops()
+            }
+        });
+    }
+    render() {
+        return (
+          <div className="App">
+            <div className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <h2>Welcome to PitStops</h2>
+            </div>
+            <PitStopList
+                pitStops={this.state.pitStops}
+            />
+
+          </div>
+        );
+    }
 }
 
-class Table extends Component {
+
+
+class Table extends React.Component {
 
 }
-class TableRow extends Component {
+class TableRow extends React.Component {
 
 }
 
