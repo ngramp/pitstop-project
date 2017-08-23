@@ -11,12 +11,12 @@ var registry = baseRegistry.child();
 
 registry.register('text/uri-list', require('../api/uriListConverter'));
 registry.register(
-  'application/hal+json',
-  require('rest/mime/type/application/hal')
+    'application/hal+json',
+    require('rest/mime/type/application/hal')
 );
 
 module.exports = rest
-  .wrap(mime, { registry: registry })
-  .wrap(uriTemplateInterceptor)
-  .wrap(errorCode)
-  .wrap(defaultRequest, { headers: { Accept: 'application/hal+json' } });
+    .wrap(mime, {registry: registry})
+    .wrap(uriTemplateInterceptor)
+    .wrap(errorCode)
+    .wrap(defaultRequest, {headers: {Accept: 'application/hal+json'}});
