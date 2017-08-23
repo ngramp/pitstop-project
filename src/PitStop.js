@@ -1,19 +1,19 @@
 import React from 'react';
-const PitStop = props => {
-  const pitStop = props.pitStop;
-  return (
-    <div>
-      <div>
-        {pitStop.vehicleNumber}
-      </div>
-      <div>
-        {pitStop.timeIn}
-      </div>
-      <div>
-        {pitStop.timeOut}
-      </div>
-    </div>
-  );
-};
-
+class PitStop extends React.Component {
+  render() {
+    return (
+      <tr>
+        <td>
+          {this.props.pitStop.vehicleNumber}
+        </td>
+        <td>
+          {this.props.pitStop.timeIn}
+        </td>
+        <td>
+          {this.props.pitStop.timeOut}
+        </td>
+      </tr>
+    );
+  }
+}
 export default PitStop;

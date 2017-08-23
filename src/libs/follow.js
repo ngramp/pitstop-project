@@ -11,19 +11,14 @@ module.exports = function follow(api, rootPath, relArray) {
 
   function traverseNext(root, rel, arrayItem) {
     return root.then(function(response) {
-      window.console.log(rel);
       //for some reason, this is not being parsed correctly
-      response.entity = JSON.parse(response.entity);
-      window.console.log(response.entity);
+      //response.entity = JSON.parse(response.entity);
       if (hasEmbeddedRel(response.entity, rel)) {
-        window.console.log('has rel');
         return response.entity._embedded[rel];
       }
 
       if (!response.entity._links) {
         return [];
-      } else {
-        window.console.log('has links');
       }
 
       if (typeof arrayItem === 'string') {
