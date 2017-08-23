@@ -6,6 +6,7 @@ var mime = require('rest/interceptor/mime');
 var uriTemplateInterceptor = require('../api/uriTemplateInterceptor');
 var errorCode = require('rest/interceptor/errorCode');
 var baseRegistry = require('rest/mime/registry');
+var template = require('rest/interceptor/template');
 
 var registry = baseRegistry.child();
 
@@ -19,4 +20,5 @@ module.exports = rest
     .wrap(mime, {registry: registry})
     .wrap(uriTemplateInterceptor)
     .wrap(errorCode)
-    .wrap(defaultRequest, {headers: {Accept: 'application/hal+json'}});
+    .wrap(defaultRequest, {headers: {Accept: 'application/hal+json'}})
+    .wrap(template, { params: { lang: 'en-us' } });

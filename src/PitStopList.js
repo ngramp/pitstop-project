@@ -1,6 +1,7 @@
 import React from 'react';
 import PitStop from './PitStop';
-
+import {tables,pagination,nav} from 'bootstrap-css'
+Object.assign(tables,pagination,nav)
 class PitStopList extends React.Component {
     constructor(props) {
         super(props);
@@ -32,6 +33,7 @@ class PitStopList extends React.Component {
     }
 
     render() {
+        //window.console.log(this.props.pitStops);
         var pitStops = this.props.pitStops.map(pitStop =>
             <PitStop
                 key={pitStop._links.self.href}
@@ -43,28 +45,28 @@ class PitStopList extends React.Component {
         var navLinks = [];
         if ('first' in this.props.links) {
             navLinks.push(
-                <button key="first" onClick={this.handleNavFirst}>
+                <button key="first" onClick={this.handleNavFirst} className="first">
                     &lt;&lt;
                 </button>
             );
         }
         if ('prev' in this.props.links) {
             navLinks.push(
-                <button key="prev" onClick={this.handleNavPrev}>
+                <button key="prev" onClick={this.handleNavPrev} className="previous">
                     &lt;
                 </button>
             );
         }
         if ('next' in this.props.links) {
             navLinks.push(
-                <button key="next" onClick={this.handleNavNext}>
+                <button key="next" onClick={this.handleNavNext} className="next">
                     &gt;
                 </button>
             );
         }
         if ('last' in this.props.links) {
             navLinks.push(
-                <button key="last" onClick={this.handleNavLast}>
+                <button key="last" onClick={this.handleNavLast} className="last">
                     &gt;&gt;
                 </button>
             );
@@ -72,7 +74,7 @@ class PitStopList extends React.Component {
 
         return (
             <div className="table-responsive">
-                <table id="pitStopTable" className="table table-hover table-condensed">
+                <table  className="table table-hover table-condensed">
                     <thead>
                     <tr>
                         <th>Vehicle Number</th>
@@ -85,7 +87,7 @@ class PitStopList extends React.Component {
                     {pitStops}
                     </tbody>
                 </table>
-                <div>
+                <div className="pager">
                     {navLinks}
                 </div>
             </div>

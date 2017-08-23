@@ -21,9 +21,9 @@ class PitStop extends React.Component {
                 <td>
                     {this.props.pitStop.timeOut}
                 </td>
-                <td>
-                    {this.props.pitStop.comment}
-                </td>
+                {/*<td>*/}
+                    {/*{this.props.pitStop.comment}*/}
+                {/*</td>*/}
                 <td>
                     <CommentDialog
                         pitStop={this.props.pitStop}
