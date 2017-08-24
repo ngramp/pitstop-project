@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import PitStopList from './PitStopList';
 import logo from './logo.svg';
 

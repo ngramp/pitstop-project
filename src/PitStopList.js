@@ -1,7 +1,7 @@
 import React from 'react';
 import PitStop from './PitStop';
 import {tables,pagination,nav} from 'bootstrap-css'
-Object.assign(tables,pagination,nav)
+Object.assign(tables,pagination,nav);
 class PitStopList extends React.Component {
     constructor(props) {
         super(props);

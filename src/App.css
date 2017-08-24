@@ -26,3 +26,20 @@
         transform: rotate(360deg);
     }
 }
+
+.row {
+    display: table;
+    width: 100%;
+}
+
+.row > div {
+    display: table-cell;
+    width: 33%;
+}
+.comments {
+    padding-left:5em;
+    padding-right: 5em;
+}
+.editing {
+
+}
