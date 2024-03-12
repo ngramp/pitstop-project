@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="hamster-time-tracker" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css" rel="stylesheet" />
+
+
+    <title>Activity report for 17 August – 24, 2017</title>
+    <style type="text/css">
+        body {
+            font-family: "Droid Sans", "Liberation Sans", "Helvetica", "Arial", sans-serif;
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+            color: #303030;
+            background: #eee;
+        }
+
+        #content {
+            width: 700px;
+            padding:  24px 12px;
+            margin:0px auto;
+            background: #f6f6f6;
+            border-right: 2px solid #bbb;
+            border-left: 1px solid #bbb;
+        }
+
+        th, td {
+            text-align: left;
+            padding-right: 24px;
+        }
+
+        th {
+            padding-top: 12px;
+        }
+
+        h1 {margin-top: 0; margin-bottom: 1em;}
+        h2 {margin-bottom: 4px;}
+
+        .even {background-color: #eee;}
+        .odd {background-color: #fff;}
+
+        .by_day_controls {
+            margin-bottom: 24px;
+        }
+
+        #activity_log {
+            display: none;
+        }
+
+
+        table.chart {
+            border-collapse:collapse;
+            margin-bottom: 2em;
+        }
+
+        td.bar_col {
+            width: 100px;
+        }
+
+        .bar {
+            background-color: #7B8ED7;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: #fff;
+            height: 100%;
+        }
+
+        #date_chart {
+            width: 100%;
+            overflow: auto;
+            overflow-y: hidden;
+            height: 80px;
+        }
+
+        #date_chart table {
+            width: 100%;
+            height: 90%;
+            border-collapse: collapse;
+            margin-bottom: 4px;
+        }
+
+        #date_chart table tr {vertical-align: bottom;}
+        #date_chart table td {
+            padding: 0;
+            padding-right: 1px;
+        }
+
+        #date_chart .bar {
+            width: 100%;
+            background-color: #ccc;
+            border-radius: 0;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+
+        #grand_total {
+            color: #999;
+        }
+
+        #activity_log {
+            padding: 6px;
+            margin: 6px;
+            padding-left: 12px;
+            border: 1px solid silver;
+            background: #eee;
+
+        }
+
+        #date_facts tr:td {
+            padding-left: 24px;
+        }
+
+        p.template-instructions {
+            margin-top: 2em;
+        }
+    </style>
+
+    <style type="text/css" media="print">
+        div#tabs ul {
+            display: none;
+        }
+
+        div#tabs {
+            border: none;
+        }
+
+        div.by_day_controls {
+            display: none;
+        }
+
+        p.template-instructions {
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var facts = [{"category": "Unsorted", "description": "Appears to be spring boot/data rest application. No mention of discovery server so not cloud. Initial thoughts are to poll for the data with another spring boot app. Would be good to push updates to the UI , but not sure if that's possible with spring rest.", "tags": [], "start_time": 1502991000, "delta": 3000, "end_time": 1502994000, "activity": "first look at testdatafeed app. Appears to be spring boot/data rest application. No mention of discovery server", "date": 1502928000, "id": 3}, {"category": "Unsorted", "description": "build out entities, repos and services", "tags": [], "start_time": 1503229920, "delta": 2452, "end_time": 1503232372, "activity": "creating spring boot app", "date": 1503187200, "id": 5}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503245423, "delta": 1357, "end_time": 1503246780, "activity": "databinding to feed", "date": 1503187200, "id": 6}, {"category": "Unsorted", "description": "single poll at the moment to test. will have to poll the api frequently for live updates. needs to be done in such a way as to not create dupes.", "tags": [], "start_time": 1503246780, "delta": 3960, "end_time": 1503250740, "activity": "building model for RestTemplate", "date": 1503187200, "id": 8}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503315000, "delta": 2520, "end_time": 1503317520, "activity": "hibernate setup", "date": 1503273600, "id": 9}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503390600, "delta": 14400, "end_time": 1503405000, "activity": "learning react", "date": 1503360000, "id": 21}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503410400, "delta": 13500, "end_time": 1503423900, "activity": "building out react site", "date": 1503360000, "id": 22}, {"category": "Unsorted", "description": "there were problems between REST and webmvc, most of the the webmvc stuff wasn't needed as it's all static.", "tags": [], "start_time": 1503426600, "delta": 12600, "end_time": 1503439200, "activity": "making react work with spring", "date": 1503360000, "id": 23}, {"category": "Unsorted", "description": "ejected config, but noparse did not help", "tags": [], "start_time": 1503488520, "delta": 4881, "end_time": 1503493401, "activity": "trying to customise react-scripts", "date": 1503446400, "id": 11}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503493401, "delta": 4853, "end_time": 1503498254, "activity": "working on react", "date": 1503446400, "id": 12}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503499500, "delta": 8726, "end_time": 1503508226, "activity": "implementing comments", "date": 1503446400, "id": 14}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503508548, "delta": 8142, "end_time": 1503516690, "activity": "working on live updates - websockets etc", "date": 1503446400, "id": 16}, {"category": "Unsorted", "description": "params aren't being dealt with atm", "tags": [], "start_time": 1503516690, "delta": 1470, "end_time": 1503518160, "activity": "working on sorting", "date": 1503446400, "id": 17}, {"category": "Unsorted", "description": "sprint event only trigger on restrepo updates, not via backend atm\n\nhmm, jpa listeners cannot be autoowired", "tags": [], "start_time": 1503518160, "delta": 5014, "end_time": 1503523174, "activity": "live updates", "date": 1503446400, "id": 20}, {"category": "Unsorted", "description": "few things remaining:\n- css/js to make comments a bit nicer\n- ability to pause the live updates\n- fix the time formatting, possibly pull in time of day and race time from levefeed\n- spring security to seperate commenting rights", "tags": [], "start_time": 1503527040, "delta": 109, "end_time": 1503527149, "activity": "plan for tommorow", "date": 1503446400, "id": 25}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503574929, "delta": 8172, "end_time": 1503583101, "activity": "working on css", "date": 1503532800, "id": 26}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503583101, "delta": 1932, "end_time": 1503585033, "activity": "cleaning up server code", "date": 1503532800, "id": 27}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503585033, "delta": 15011, "end_time": 1503600044, "activity": "packaging for deployment", "date": 1503532800, "id": 28}];
+
+        function showChart(target, data) {
+            totals = []
+            // turn object into a list of tuples and convert durations from seconds to hours
+            var max_duration = 0;
+            for (var key in data) {
+                var duration = data[key] / 60 / 60.0;
+                totals.push([key, duration]); // hours
+
+                max_duration = Math.max(max_duration, duration);
+            }
+
+            // sort by duration descending
+            totals.sort(function compare(a,b) {return b[1] - a[1]})
+
+            // create the HTML
+            var table = $("<table class='chart' style='width:100%' />")
+            for (var i=0; i < totals.length; i++) {
+                var total = totals[i];
+
+                var row = $("<tr />");
+                var label = $("<td />");
+
+                label.text(total[0]);
+                row.append(label);
+
+
+                var duration = Math.round(total[1] * 10) / 10; // round to one decimal
+                var duration_label = $("<td />");
+                duration_label.text(duration);
+                row.append(duration_label);
+
+
+                var bar_col = $("<td class='bar_col' />");
+                var bar = $("<div class='bar'>&nbsp;</div>");
+                bar.width(total[1] / max_duration * 100);
+                bar_col.append(bar);
+                row.append(bar_col);
+
+                table.append(row);
+            }
+
+            target.append(table);
+
+        }
+
+        $(document).ready(function() {
+            var categoryTotals = {};
+            var activityTotals = {};
+            var tagTotals = {};
+            var dateTotals = {}
+
+            function add(list, key, value) {
+                list[key] = list[key] || 0;
+                list[key] += value;
+            }
+
+            var grandTotal = 0;
+            for (var i=0; i < facts.length; i++) {
+                var fact = facts[i];
+
+                add(dateTotals, fact.date, fact.delta)
+                add(categoryTotals, fact.category, fact.delta)
+                add(activityTotals, fact.activity, fact.delta)
+
+                for (var j=0; j < fact.tags.length; j++) {
+                    add(tagTotals, fact.tags[j], fact.delta)
+                }
+
+                grandTotal += fact.delta;
+            }
+
+            grandTotal = Math.round(grandTotal / 60 / 60 * 10) / 10;
+            $("#grand_total").text("(" + grandTotal + ")");
+
+
+
+            showChart($("#category_chart"), categoryTotals)
+            showChart($("#activity_chart"), activityTotals)
+            showChart($("#tag_chart"), tagTotals)
+
+
+            // create the by-day chart
+            var startDate = 1502928000;
+            var endDate = 1503532800;
+
+            var dates = [];
+            var dateMax = 0;
+            for (var i=startDate; i <= endDate; i += 24 * 60 * 60) {
+                var duration = dateTotals[i] || 0;
+                dateMax = Math.max(dateMax, duration);
+                dates.push([new Date(i), duration])
+            }
+
+            var table = $("<table />")
+            var row = $("<tr />");
+            for (var i=0; i<dates.length; i++) {
+                var date = dates[i];
+                var col = $("<td />");
+
+                var bar = $("<div class='bar'>&nbsp;</div>");
+                var bar_height = date[1] / dateMax * 70;
+                if (bar_height < 1)
+                    bar.height(1);
+                else
+                    bar.height(bar_height)
+
+                col.append(bar);
+                row.append(col);
+            }
+            table.append(row);
+            $("#date_chart").append(table);
+
+
+
+            $("#activity_log_link").click(function() {
+                $("#activity_log").toggle();
+                return false;
+            })
+
+            $("#show_details").click(function() {
+                if ($(this).attr("checked")) {
+                    $(".by_date_row").show();
+                } else {
+                    $(".by_date_row").hide();
+                }
+
+            })
+
+            $("#show_totals").click(function() {
+                if ($(this).attr("checked")) {
+                    $(".by_date_total_row").show();
+                } else {
+                    $(".by_date_total_row").hide();
+                }
+
+
+            })
+
+            populateFactTable();
+
+
+            $(".by_day_controls input").click(function(){
+                populateFactTable();
+            });
+        });
+
+
+        function populateFactTable() {
+            // fill fact rows
+            var table = $("#date_facts");
+            table.empty();
+
+            var dateFacts = [["17 Aug, 2017", [{"category": "Unsorted", "description": "Appears to be spring boot/data rest application. No mention of discovery server so not cloud. Initial thoughts are to poll for the data with another spring boot app. Would be good to push updates to the UI , but not sure if that's possible with spring rest.", "tags": [], "start_time": 1502991000, "delta": 3000, "end_time": 1502994000, "activity": "first look at testdatafeed app. Appears to be spring boot/data rest application. No mention of discovery server", "date": 1502928000, "id": 3}]], ["18 Aug, 2017", []], ["19 Aug, 2017", []], ["20 Aug, 2017", [{"category": "Unsorted", "description": "build out entities, repos and services", "tags": [], "start_time": 1503229920, "delta": 2452, "end_time": 1503232372, "activity": "creating spring boot app", "date": 1503187200, "id": 5}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503245423, "delta": 1357, "end_time": 1503246780, "activity": "databinding to feed", "date": 1503187200, "id": 6}, {"category": "Unsorted", "description": "single poll at the moment to test. will have to poll the api frequently for live updates. needs to be done in such a way as to not create dupes.", "tags": [], "start_time": 1503246780, "delta": 3960, "end_time": 1503250740, "activity": "building model for RestTemplate", "date": 1503187200, "id": 8}]], ["21 Aug, 2017", [{"category": "Unsorted", "description": "", "tags": [], "start_time": 1503315000, "delta": 2520, "end_time": 1503317520, "activity": "hibernate setup", "date": 1503273600, "id": 9}]], ["22 Aug, 2017", [{"category": "Unsorted", "description": "", "tags": [], "start_time": 1503390600, "delta": 14400, "end_time": 1503405000, "activity": "learning react", "date": 1503360000, "id": 21}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503410400, "delta": 13500, "end_time": 1503423900, "activity": "building out react site", "date": 1503360000, "id": 22}, {"category": "Unsorted", "description": "there were problems between REST and webmvc, most of the the webmvc stuff wasn't needed as it's all static.", "tags": [], "start_time": 1503426600, "delta": 12600, "end_time": 1503439200, "activity": "making react work with spring", "date": 1503360000, "id": 23}]], ["23 Aug, 2017", [{"category": "Unsorted", "description": "ejected config, but noparse did not help", "tags": [], "start_time": 1503488520, "delta": 4881, "end_time": 1503493401, "activity": "trying to customise react-scripts", "date": 1503446400, "id": 11}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503493401, "delta": 4853, "end_time": 1503498254, "activity": "working on react", "date": 1503446400, "id": 12}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503499500, "delta": 8726, "end_time": 1503508226, "activity": "implementing comments", "date": 1503446400, "id": 14}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503508548, "delta": 8142, "end_time": 1503516690, "activity": "working on live updates - websockets etc", "date": 1503446400, "id": 16}, {"category": "Unsorted", "description": "params aren't being dealt with atm", "tags": [], "start_time": 1503516690, "delta": 1470, "end_time": 1503518160, "activity": "working on sorting", "date": 1503446400, "id": 17}, {"category": "Unsorted", "description": "sprint event only trigger on restrepo updates, not via backend atm\n\nhmm, jpa listeners cannot be autoowired", "tags": [], "start_time": 1503518160, "delta": 5014, "end_time": 1503523174, "activity": "live updates", "date": 1503446400, "id": 20}, {"category": "Unsorted", "description": "few things remaining:\n- css/js to make comments a bit nicer\n- ability to pause the live updates\n- fix the time formatting, possibly pull in time of day and race time from levefeed\n- spring security to seperate commenting rights", "tags": [], "start_time": 1503527040, "delta": 109, "end_time": 1503527149, "activity": "plan for tommorow", "date": 1503446400, "id": 25}]], ["24 Aug, 2017", [{"category": "Unsorted", "description": "", "tags": [], "start_time": 1503574929, "delta": 8172, "end_time": 1503583101, "activity": "working on css", "date": 1503532800, "id": 26}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503583101, "delta": 1932, "end_time": 1503585033, "activity": "cleaning up server code", "date": 1503532800, "id": 27}, {"category": "Unsorted", "description": "", "tags": [], "start_time": 1503585033, "delta": 15011, "end_time": 1503600044, "activity": "packaging for deployment", "date": 1503532800, "id": 28}]]];
+
+            // determine if we will be doing any internal counting
+            var keys = [];
+            if ($("#show_activities").attr("checked"))
+                keys.push("activity");
+
+            if ($("#show_categories").attr("checked"))
+                keys.push("category");
+
+            if ($("#show_tags").attr("checked"))
+                keys.push("tags");
+
+
+
+            for (var i in dateFacts) {
+                var dateString = dateFacts[i][0];
+                var dateTotal = 0;
+
+                var factTotals = {}
+                for (var j in dateFacts[i][1]) {
+                    var fact = dateFacts[i][1][j];
+                    fact.tags = fact.tags.join(", ");
+
+                    if (keys.length > 0) {
+                        var key = [];
+                        for (var k in keys) {
+                            key.push(fact[keys[k]])
+                        }
+
+                        key = key.join(" - ");
+                        factTotals[key] = factTotals[key] || 0;
+                        factTotals[key] += fact.delta;
+                    }
+
+
+                    dateTotal += fact.delta;
+                }
+
+                dateTotal = Math.round(dateTotal / 60 / 60 * 10) / 10;
+                table.append("<tr><th>" + dateString + "</th><th>" + dateTotal +"</th></tr>");
+
+                for (var key in factTotals) {
+                    keyTotal = Math.round(factTotals[key] / 60 / 60 * 10) / 10;
+                    table.append("<tr><td>" + key + "</td><td>" + keyTotal +"</td></tr>");
+                }
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="content">
+    <h1>Activity report for 17 August – 24, 2017 <span id="grand_total"></span></h1>
+
+    <div id="date_chart"></div>
+
+    <a id="activity_log_link" href="#">Show activity log</a>
+    <div id="activity_log">
+        <h2>Activity Log</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Activity</th>
+                <th>Category</th>
+                <th>Tags</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Duration</th>
+                <th>Description</th>
+            </tr>
+            
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        17 Aug, 2017
+                    </td>
+                    <td>first look at testdatafeed app. Appears to be spring boot/data rest application. No mention of discovery server</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        17:30
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        18:20
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        50min
+                    </td>
+                    <td>Appears to be spring boot/data rest application. No mention of discovery server so not cloud. Initial thoughts are to poll for the data with another spring boot app. Would be good to push updates to the UI , but not sure if that's possible with spring rest.</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        20 Aug, 2017
+                    </td>
+                    <td>creating spring boot app</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        11:52
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        12:32
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        40min
+                    </td>
+                    <td>build out entities, repos and services</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        20 Aug, 2017
+                    </td>
+                    <td>databinding to feed</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        16:10
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        16:33
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        22min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        20 Aug, 2017
+                    </td>
+                    <td>building model for RestTemplate</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        16:33
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        17:39
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        1h 6min
+                    </td>
+                    <td>single poll at the moment to test. will have to poll the api frequently for live updates. needs to be done in such a way as to not create dupes.</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        21 Aug, 2017
+                    </td>
+                    <td>hibernate setup</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        11:30
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        12:12
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        42min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        22 Aug, 2017
+                    </td>
+                    <td>learning react</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        08:30
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        12:30
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        4h
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        22 Aug, 2017
+                    </td>
+                    <td>building out react site</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        14:00
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        17:45
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        3h 45min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        22 Aug, 2017
+                    </td>
+                    <td>making react work with spring</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        18:30
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        22:00
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        3h 30min
+                    </td>
+                    <td>there were problems between REST and webmvc, most of the the webmvc stuff wasn't needed as it's all static.</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>trying to customise react-scripts</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        11:42
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        13:03
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        1h 21min
+                    </td>
+                    <td>ejected config, but noparse did not help</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>working on react</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        13:03
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        14:24
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        1h 20min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>implementing comments</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        14:45
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        17:10
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        2h 25min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>working on live updates - websockets etc</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        17:15
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        19:31
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        2h 15min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>working on sorting</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        19:31
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        19:56
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        24min
+                    </td>
+                    <td>params aren't being dealt with atm</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>live updates</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        19:56
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        21:19
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        1h 23min
+                    </td>
+                    <td>sprint event only trigger on restrepo updates, not via backend atm
+
+hmm, jpa listeners cannot be autoowired</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        23 Aug, 2017
+                    </td>
+                    <td>plan for tommorow</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        22:24
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        22:25
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        1min
+                    </td>
+                    <td>few things remaining:
+- css/js to make comments a bit nicer
+- ability to pause the live updates
+- fix the time formatting, possibly pull in time of day and race time from levefeed
+- spring security to seperate commenting rights</td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        24 Aug, 2017
+                    </td>
+                    <td>working on css</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        11:42
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        13:58
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        2h 16min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        24 Aug, 2017
+                    </td>
+                    <td>cleaning up server code</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        13:58
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        14:30
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        32min
+                    </td>
+                    <td></td>
+                </tr>
+            
+
+                <tr>
+                    <td>
+                        <!-- there is also date_iso -->
+                        24 Aug, 2017
+                    </td>
+                    <td>packaging for deployment</td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- there is also start_iso -->
+                        14:30
+                    </td>
+                    <td>
+                        <!-- there is also end_iso -->
+                        18:40
+                    </td>
+                    <td>
+                        <!-- there is also duration_decimal and duration_minutes -->
+                        4h 10min
+                    </td>
+                    <td></td>
+                </tr>
+            
+        </table>
+    </div>
+
+
+
+    <table>
+        <tr style="vertical-align: top">
+            <td style="width: 100%">
+
+                <h2>Totals by Day</h2>
+
+                <div class="by_day_controls">
+                    Distinguish:
+                    <input type="checkbox" id="show_activities" checked="checked"></input>
+                    <label for="show_details">activities</label>
+
+                    <input type="checkbox" id="show_categories" checked="checked"></input>
+                    <label for="show_totals">categories</label>
+
+                    <input type="checkbox" id="show_tags" checked="checked"></input>
+                    <label for="show_totals">tags</label>
+                </div>
+
+                <table id="date_facts"></table>
+            </td>
+            <td>
+                <div>
+                    <h2>Categories</h2>
+                    <div id="category_chart"></div>
+                </div>
+                <div>
+                    <h2>Activities</h2>
+                    <div id="activity_chart"></div>
+                </div>
+                <div>
+                    <h2>Tags</h2>
+                    <div id="tag_chart"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <p class="template-instructions">
+        <a href="file:////usr/share/hamster-time-tracker/report_template.html">Show template</a>.
+        You can override it by storing your version in /home/gram/.local/share/hamster-time-tracker.
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,668 @@
+{
+  "lap_number" : 23,
+  "elapsed_time" : 28453.23,
+  "time_of_day" : 81853.23,
+  "vehicles" : [ {
+    "vehicle_number" : 33,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 1.5996,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 397.1932,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1312.9974,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2354.6421,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2370.7984
+  }, {
+    "vehicle_number" : 6,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 140.238,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 408.6726,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1727.4335,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2357.6867,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2372.8931
+  }, {
+    "vehicle_number" : 60,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 17.8514,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 261.5093,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1043.8598,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1607.402,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2352.2388,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2973.7009,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2991.2854
+  }, {
+    "vehicle_number" : 40,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 1167.8265,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1409.9476,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 1433.1295
+  }, {
+    "vehicle_number" : 23,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 655.7484,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 814.6962,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2552.9046,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2573.7172
+  }, {
+    "vehicle_number" : 12,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 81.9769,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 345.0035,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1583.8574,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 3007.1158,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3025.1025
+  }, {
+    "vehicle_number" : 24,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 593.0249,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 750.2301,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1731.8122,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2567.7444,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2588.0992
+  }, {
+    "vehicle_number" : 77,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 364.9633,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 506.0351,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1357.7116,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2227.8789,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2993.5649
+  }, {
+    "vehicle_number" : 7,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 435.4489,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 625.6603,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1427.2622,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2119.3292,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2771.8088,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2788.1117
+  }, {
+    "vehicle_number" : 30,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 15.5525,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 188.6515,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 942.1677,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1528.7491,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2121.1662,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2706.1951,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2723.3672
+  }, {
+    "vehicle_number" : 1,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 514.6415,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 821.5774,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1735.1971,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2483.4195,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2852.9537,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2871.7349
+  }, {
+    "vehicle_number" : 43,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 324.4163,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 529.1688,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1224.5303,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2383.9345,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2826.2804,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2840.8652
+  }, {
+    "vehicle_number" : 4,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 668.5508,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2372.1467,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2391.4093
+  }, {
+    "vehicle_number" : 32,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 10.9549,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 179.7563,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 857.2276,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1736.5512,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2271.8308,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2717.4886,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2733.5008
+  }, {
+    "vehicle_number" : 54,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 1307.3051,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1480.0066,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2373.0734,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3023.4351
+  }, {
+    "vehicle_number" : 31,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 686.4173,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1184.8653,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2224.4552,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2946.983,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2966.8033
+  }, {
+    "vehicle_number" : 70,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 85.8554,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 393.4297,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1191.2153,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1781.5897,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 1795.834
+  }, {
+    "vehicle_number" : 22,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 415.8389,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 589.0713,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2036.9765,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2050.9895
+  }, {
+    "vehicle_number" : 87,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 1314.6971,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1662.207,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 1678.7869
+  }, {
+    "vehicle_number" : 51,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 310.8235,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 642.9033,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 663.4908
+  }, {
+    "vehicle_number" : 14,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 615.9614,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 799.3575,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1738.2636,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2395.7511,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2827.6238,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2847.9006
+  }, {
+    "vehicle_number" : 11,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 873.4178,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1091.0903,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2151.6287,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3019.9799
+  }, {
+    "vehicle_number" : 20,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 396.0063,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 607.5918,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1432.2395,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2608.4398,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2624.1113
+  }, {
+    "vehicle_number" : 19,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 199.9924,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 385.8577,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1023.0433,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1590.2357,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2475.1719,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2930.7836,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2950.1848
+  }, {
+    "vehicle_number" : 44,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 18.0228,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 178.2451,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 561.5361,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2157.623,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2452.0682,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2952.7367,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2971.9612
+  }, {
+    "vehicle_number" : 79,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 437.7713,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 729.8266,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1430.6692,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3001.0725
+  }, {
+    "vehicle_number" : 5,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 5.8987,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 149.0318,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 918.0112,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1466.5661,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2329.0974,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 3010.7881,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3027.3218
+  }, {
+    "vehicle_number" : 2,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 862.9173,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1033.1705,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2046.6565,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2783.7909,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2798.2157
+  }, {
+    "vehicle_number" : 99,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 124.0798,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 333.3875,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1375.5516,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2216.5159,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3025.3076
+  }, {
+    "vehicle_number" : 3,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 817.7456,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1111.641,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2494.3041,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3012.2744
+  }, {
+    "vehicle_number" : 16,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 179.9955,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 430.1154,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 930.8163,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1520.2113,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2501.9552,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2896.4455,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2910.51
+  }, {
+    "vehicle_number" : 10,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 617.7185,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 752.3998,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2289.2021,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2307.7207
+  }, {
+    "vehicle_number" : 91,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 1874.0926,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1992.9723,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2862.2129,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2879.9141
+  }, {
+    "vehicle_number" : 98,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 47.7086,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 253.7359,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1151.5438,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1993.7967,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2557.9964,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 3017.5022,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3026.2102
+  }, {
+    "vehicle_number" : 18,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 106.9837,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 251.276,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 911.3869,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1369.7876,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2136.3505,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2976.1886,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2994.1652
+  }, {
+    "vehicle_number" : 42,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 440.8535,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 599.0578,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2730.5882,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2749.5399
+  }, {
+    "vehicle_number" : 55,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 189.2767,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 382.5102,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1199.5459,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1996.2321,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2445.2833,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3001.7118
+  }, {
+    "vehicle_number" : 92,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 2857.459,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 3027.0701
+  }, {
+    "vehicle_number" : 9,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 76.7353,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 397.3934,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1327.2448,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2018.9534,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2971.582,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2985.6905
+  }, {
+    "vehicle_number" : 74,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 640.0953,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 786.0787,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2014.0834,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 2905.1326,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 2923.0769
+  }, {
+    "vehicle_number" : 48,
+    "pit_stops" : [ {
+      "pit_in_elapsed_time" : 1488.0877,
+      "pit_out_elapsed_time" : 0.0
+    }, {
+      "pit_in_elapsed_time" : 1638.6393,
+      "pit_out_elapsed_time" : 0.0
+    } ],
+    "vehicle_elapsed_time" : 1651.8698
+  } ]
+}
