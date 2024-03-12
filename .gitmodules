@@ -1,0 +1,6 @@
+[submodule "pitstop"]
+	path = pitstop
+	url = git@github.com:ngramp/pitstop-server.git
+[submodule "pitstop-client"]
+	path = pitstop-client
+	url = git@github.com:ngramp/pitstop-client.git
